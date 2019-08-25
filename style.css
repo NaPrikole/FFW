@@ -1,0 +1,235 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: beige;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: lightslategray;
+}
+
+footer {
+  text-align: center;
+  background-color: lightslategray;
+}
+
+footer p {
+  margin: 15px 0 0;
+  padding: 15px;
+}
+
+header h1 {
+  padding: 20px;
+  margin: 0;
+}
+
+section {
+  max-width: 800px;
+  margin: 10px auto 0;
+  background-color: rgb(255, 255, 236);
+  padding: 20px;
+  border: 2px solid lightslategray;
+  box-sizing: border-box;
+}
+
+section.fonts-list {
+  border: none;
+  padding: 0;
+}
+
+section h3 {
+  font-style: italic;
+  color: #333333;
+}
+
+.font-section {
+  width: 70%;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.onclick {
+  padding: 8px 20px;
+  border: 2px solid lightslategray;
+  background-color: #666;
+  border-radius: 7px;
+  text-decoration: none;
+  color: lightskyblue;
+  font-style: italic;
+}
+
+.align-button {
+  text-align: center;
+}
+
+#user-name,
+#user-email {
+  border: 1px solid lightgrey;
+  margin: 5px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container > h2 {
+  margin-bottom: -52px;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-flex;
+}
+
+ul li a {
+  text-decoration: none;
+  color: darkgray;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+ul li a:hover {
+  color: gray;
+}
+
+.nav {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.nav .active a {
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+.nav .active a:hover {
+  border-color: transparent;
+  background: orange;
+  color: white;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+  border: 3px solid lightblue;
+  border-radius: 7px;
+  padding: 25px 23px;
+  position: relative;
+  min-height: 190px;
+  min-width: 320px;
+}
+
+.wrapper {
+  border: 1px solid #000000;
+  border-radius: 9px;
+  width: 79px;
+}
+
+.main-wrapper {
+  border: 1px solid #000000;
+  border-radius: 9px;
+  width: 104px;
+}
+
+.squere {
+  width: 75px;
+  height: 75px;
+  border-radius: 9px;
+  border: 2px solid #ffffff;
+  position: relative;
+}
+
+.one {
+  background-color: #009900;
+  width: 100px;
+  height: 100px;
+}
+
+.two {
+  background-color: rgb(255, 179, 179);
+}
+
+.three {
+  background-color: rgb(0, 191, 255);
+}
+
+#canvas1,
+#canvas2,
+#canvas3 {
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+}
+
+input:checked + label > span,
+input:checked + label {
+  opacity: 0.5;
+}
+
+.left-position {
+  float: left;
+}
+
+.right-position {
+  width: 50%;
+  float: right;
+  position: relative;
+}
+
+.right-position > div {
+  margin-bottom: 20px;
+}
+
+.radio-label {
+  margin: 15px 0 5px;
+}
+
+.right-position .radio-label {
+  margin-top: 5px;
+}
+
+.radio-label label span {
+  display: block;
+  margin-left: 25px;
+}
+
+.align-items-top {
+  position: absolute;
+  left: 90px;
+  top: 0;
+}
+
+.align-items-bottom {
+  position: absolute;
+  left: 90px;
+  bottom: 50px;
+}
+
+#by-fonts {
+  text-align: center;
+}
+
+@media (max-width: 490px) {
+  .container > h2 {
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .nav {
+    text-align: center;
+  }
+}

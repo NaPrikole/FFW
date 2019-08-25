@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FFW</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>FFW</h1>
+    </header>
+    <main>
+      <section>
+        <h3>
+          Task 1: Consider the following code what will the console.log output
+          be and why? Name the JS rule that is responsible for this behavior.
+        </h3>
+        <p>
+          Answer: Output will be 'undefined' coz it is normal JS bahaviour and
+          it is called hoisting. Use let or const that avoid this behaviour if
+          you don't need global variable.
+        </p>
+      </section>
+      <section>
+        <h3>
+          Task 4: Consider the scenario from the image below. You have a
+          “functionality” helper object that you reuse. In it you attach a click
+          handler called “clickListener” that should ultimately change
+          “isActive” and call “checkTriggered”. When a user clicks on a link:
+          will your code execute correctly? If not – how should we fix it while
+          keeping this original object structure?
+        </h3>
+        <div class="align-button">
+          <a class="onclick" onclick="functionality.addListeners();" href="#"
+            >Click me and watch the console</a
+          >
+        </div>
+      </section>
+      <section>
+        <h3>
+          Task 6: Write a short JS snippet that pulls JSON users data from
+          https://jsonplaceholder.typicode.com. Once you have the data print a
+          div for each user instance object received like in the following
+          example
+        </h3>
+        <h4>Data from API:</h4>
+        <div class="user">
+          <h4>List of Names:</h4>
+          <div id="user-name"></div>
+          <h4>List of E-mails:</h4>
+          <div id="user-email"></div>
+        </div>
+      </section>
+
+      <section>
+        <h3>
+          Task 1: Convert the following image to HTML/CSS/JS. Make it responsive
+          using your best judgment. The font used in the design is Montserrat
+          from Google Fonts. Please create Tabs navigation with vanilla JS. In
+          BUY FONTS tab show dummy text that is centered by both axis. For Cards
+          component, add Radio button group behavior without javascript. Style
+          Card with 50% opacity when this has an active state.
+        </h3>
+        <div class="container">
+          <h2>Please select one font</h2>
+          <ul id="nav-tab" class="nav">
+            <li class="active"><a href="#my-fonts">my fonts</a></li>
+            <li><a href="#by-fonts">by fonts</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab active" id="my-fonts">
+              <div class="left-position">
+                <div class="main-wrapper">
+                  <div class="squere one">
+                    <canvas id="canvas1" height="30" width="50"></canvas>
+                  </div>
+                </div>
+                <div class="radio-label">
+                  <input checked type="radio" id="font1" name="font" />
+                  <label for="font1"
+                    >Merriweather
+                    <span>project is led by</span>
+                    <span>Sorkin Type</span></label
+                  >
+                </div>
+              </div>
+              <div class="right-position">
+                <div>
+                  <div class="wrapper">
+                    <div class="squere two">
+                      <canvas id="canvas2" height="30" width="50"></canvas>
+                    </div>
+                  </div>
+                  <div class="align-items-top radio-label">
+                    <input type="radio" id="font2" name="font" />
+                    <label for="font2">Roboto</label>
+                  </div>
+                </div>
+                <div>
+                  <div class="wrapper">
+                    <div class="squere three">
+                      <canvas id="canvas3" height="30" width="50"></canvas>
+                    </div>
+                  </div>
+                  <div class="align-items-bottom radio-label">
+                    <input type="radio" id="font3" name="font" />
+                    <label for="font3">Noto Sans</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab" id="by-fonts">
+              <section class="fonts-list">
+                <h2>Choose the font</h2>
+                <div>
+                  <p>Roboto</p>
+                  <p>Monospase</p>
+                  <p>Arial</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>P.S.</h3>
+        <p>
+          You can check this HTML document on
+          https://validator.w3.org/nu/#textarea
+        </p>
+        <p>Look at the index.js to see the rest of the solutions.</p>
+      </section>
+    </main>
+    <footer>
+      <p>25.08.2019 &copy; Vladimir Ponomarenko</p>
+    </footer>
+  </body>
+</html>
