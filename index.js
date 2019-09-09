@@ -239,3 +239,37 @@ $(document).ready(function() {
     ctx.fillText("NS", 10, 20);
   })();
 });
+
+var Human = function() {
+  this.race = "Humanoid";
+};
+
+Human.prototype.doSomething = function() {
+  console.log("Hello " + this.race);
+};
+
+var Person = function() {
+  Human.call(this);
+  this.name = "Vladimir";
+};
+
+Person.prototype = Object.create(Human.prototype, {
+  constructor: {
+    value: Person,
+    enumerable: false,
+    writable: true,
+    configurable: true
+  }
+});
+
+Person.prototype.doAnotherAction = function() {
+  console.log("My name is " + this.name);
+};
+
+var person = new Person();
+
+console.log(person.doSomething());
+console.log(person.doAnotherAction());
+
+
+patternlab, storybook, kccnode
